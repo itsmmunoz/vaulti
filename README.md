@@ -98,6 +98,7 @@
 - [Capacítate para el Empleo](https://capacitateparaelempleo.org/) – An educational initiative.
 - [Curso-Ingles](https://www.curso-ingles.com/) – Free online english course.
 - [Photoskop](http://photoskop.com/) – Raster graphics manipulation application.
+- [Toy Theater](https://toytheater.com/) – Educational interactives collection.
 
 
 ## Entertainment
