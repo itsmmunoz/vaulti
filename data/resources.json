@@ -1,0 +1,782 @@
+[
+  {
+    "url": "https://llamacoder.together.ai/",
+    "domain": "together.ai",
+    "category": "ai",
+    "title": "Llama Coder | Code Generator",
+    "description": "Open-source environment utilizing Large Language Models to transform natural language instructions into functional React applications and UI components through real-time code synthesis.",
+    "tags": ["llama-3", "react", "programming", "code-generation"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://readme.so/",
+    "domain": "readme.so",
+    "category": "development",
+    "title": "Readme.so | Markdown Editor",
+    "description": "Visual building environment designed to simplify the creation of documentation by providing modular templates and real-time previews for GitHub project descriptions.",
+    "tags": ["markdown", "documentation", "open-source", "github"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.diagrams.net/",
+    "domain": "diagrams.net",
+    "category": "design",
+    "title": "Diagrams.net | Flowchart Creator",
+    "description": "Professional graphing software providing a vast library of shapes and connectors for building technical architecture diagrams, organizational charts, and process workflows.",
+    "tags": ["flowcharts", "vector-graphics", "collaboration", "diagramming"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://excalidraw.com/",
+    "domain": "excalidraw.com",
+    "category": "design",
+    "title": "Excalidraw | Digital Whiteboard",
+    "description": "Virtual sketching environment featuring a hand-drawn aesthetic for collaborative brainstorming, technical wireframing, and conceptual modeling in a browser-based workspace.",
+    "tags": ["whiteboard", "collaboration", "sketching", "wireframing"],
+    "pricing": "freemium",
+    "auth": "no login"
+  },
+  {
+    "url": "https://gprm.itsvg.in/",
+    "domain": "itsvg.in",
+    "category": "development",
+    "title": "GPRM | Profile Generator",
+    "description": "Automated configuration utility focused on generating aesthetically pleasing and informative GitHub profile README files through a step-by-step customization interface.",
+    "tags": ["github", "markdown", "developer-profile", "automation"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://massgrave.dev/",
+    "domain": "massgrave.dev",
+    "category": "utilities",
+    "title": "Massgrave | Activation Script",
+    "description": "Technical repository providing open-source scripts for Microsoft Windows and Office activation using permanent HWID, KMS38, and Online KMS methods without third-party software.",
+    "tags": ["windows", "microsoft-office", "scripts", "activation"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://chatgpt.com/",
+    "domain": "chatgpt.com",
+    "category": "ai",
+    "title": "ChatGPT | Conversational Assistant",
+    "description": "Advanced linguistic model designed for natural language interaction, content generation, and logical problem-solving across a diverse range of knowledge domains.",
+    "tags": ["llm", "chatbot", "generative-ai", "nlp"],
+    "pricing": "freemium",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://gemini.google.com/app",
+    "domain": "google.com",
+    "category": "ai",
+    "title": "Gemini | Artificial Intelligence",
+    "description": "Multimodal cognitive system capable of processing text, images, and code to provide information retrieval, creative assistance, and complex analytical reasoning.",
+    "tags": ["multimodal", "chatbot", "google-ai", "productivity"],
+    "pricing": "freemium",
+    "auth": "required login"
+  },
+  {
+    "url": "https://chat.deepseek.com/",
+    "domain": "deepseek.com",
+    "category": "ai",
+    "title": "DeepSeek | Language Model",
+    "description": "High-performance reasoning engine optimized for coding tasks, mathematical problem-solving, and general-purpose conversational interaction based on deep learning architectures.",
+    "tags": ["coding-ai", "reasoning", "chatbot", "machine-learning"],
+    "pricing": "free",
+    "auth": "required login"
+  },
+  {
+    "url": "https://andisearch.com/",
+    "domain": "andisearch.com",
+    "category": "ai",
+    "title": "Andi | Search Engine",
+    "description": "Next-generation information retrieval system combining traditional search indexing with generative AI to provide direct answers and summarized results without advertisements.",
+    "tags": ["search", "privacy", "generative-ai", "information"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.wolframalpha.com/",
+    "domain": "wolframalpha.com",
+    "category": "ai",
+    "title": "WolframAlpha | Computational Engine",
+    "description": "Algorithmic knowledge system that computes answers using a vast curated database of structured data across mathematics, science, engineering, and socioeconomic metrics.",
+    "tags": ["mathematics", "computation", "data-science", "knowledge-base"],
+    "pricing": "freemium",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://www.aiforwork.co/",
+    "domain": "aiforwork.co",
+    "category": "ai",
+    "title": "AI For Work | Prompt Library",
+    "description": "Professional resource hub containing specialized prompts and frameworks designed to optimize the performance of artificial intelligence in corporate and creative roles.",
+    "tags": ["prompts", "workflow", "business", "ai-optimization"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.photopea.com/",
+    "domain": "photopea.com",
+    "category": "design",
+    "title": "Photopea | Image Editor",
+    "description": "Advanced raster and vector graphics editor operating within the browser, supporting industry-standard file formats such as PSD, AI, and Sketch for professional design work.",
+    "tags": ["graphics", "photo-editing", "psd-editor", "design-software"],
+    "pricing": "freemium",
+    "auth": "no login"
+  },
+  {
+    "url": "https://squoosh.app/",
+    "domain": "squoosh.app",
+    "category": "design",
+    "title": "Squoosh | Image Compressor",
+    "description": "High-performance optimization utility providing real-time visual comparisons and advanced codec controls to reduce image file sizes without significant quality loss.",
+    "tags": ["compression", "optimization", "webp", "image-processing"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://shipfa.st/tools/logo-fast",
+    "domain": "shipfa.st",
+    "category": "design",
+    "title": "Logo Fast | Branding Generator",
+    "description": "Rapid design utility focused on creating minimalist logos and icons through a streamlined interface for startups and personal projects needing quick visual identities.",
+    "tags": ["logo-design", "branding", "icons", "startups"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://wallhaven.cc/",
+    "domain": "wallhaven.cc",
+    "category": "media",
+    "title": "Wallhaven | Wallpaper Repository",
+    "description": "Extensive community-driven gallery of high-resolution digital art and photography categorized by resolution, aspect ratio, and thematic tags for desktop customization.",
+    "tags": ["wallpapers", "digital-art", "photography", "images"],
+    "pricing": "free",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://pictogram2.com/",
+    "domain": "pictogram2.com",
+    "category": "design",
+    "title": "Pictogram2 | Icon Library",
+    "description": "Specialized collection of minimalist human-shaped pictograms depicting various actions, professions, and situations for use in signage, presentations, and UI design.",
+    "tags": ["icons", "pictograms", "design-assets", "visual-communication"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://smart.servier.com/",
+    "domain": "servier.com",
+    "category": "design",
+    "title": "Servier Medical Art | Illustration Gallery",
+    "description": "Comprehensive set of professional medical and biological illustrations available for scientific communication, educational presentations, and healthcare publications.",
+    "tags": ["medical-art", "science", "biology", "illustrations"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://uchinoko-maker.jp/",
+    "domain": "uchinoko-maker.jp",
+    "category": "entertainment",
+    "title": "Uchinoko Maker | Avatar Creator",
+    "description": "Illustrative customization environment dedicated to creating stylized cat portraits by selecting from thousands of combinations of patterns, colors, and body types.",
+    "tags": ["avatar", "illustration", "cats", "customization"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.thiings.co/things",
+    "domain": "thiings.co",
+    "category": "media",
+    "title": "Thiings | Object Gallery",
+    "description": "Digital archive of physical objects and historical artifacts presented through photography, focusing on industrial design, material culture, and aesthetic documentation.",
+    "tags": ["objects", "design-history", "photography", "archive"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.pexels.com/",
+    "domain": "pexels.com",
+    "category": "media",
+    "title": "Pexels | Stock Media",
+    "description": "Global provider of high-quality stock photography and video footage licensed for commercial use, supporting creators with free assets for digital and print projects.",
+    "tags": ["stock-photos", "video", "creative-assets", "photography"],
+    "pricing": "free",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://animagraffs.com/",
+    "domain": "animagraffs.com",
+    "category": "education",
+    "title": "Animagraffs | Explanatory Infographics",
+    "description": "Visual learning resource featuring detailed 3D animated infographics that deconstruct complex mechanical systems and scientific processes into understandable moving parts.",
+    "tags": ["infographics", "engineering", "3d-animation", "learning"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://shigureni.com/",
+    "domain": "shigureni.com",
+    "category": "media",
+    "title": "Shigureni | Illustration Library",
+    "description": "Collection of unique, hand-drawn vector illustrations from Japan, characterized by a soft aesthetic and available for personal and commercial creative use.",
+    "tags": ["illustrations", "vector-art", "japanese-design", "graphics"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://anvaka.github.io/city-roads/",
+    "domain": "github.io",
+    "category": "design",
+    "title": "City Roads | Network Visualizer",
+    "description": "Interactive mapping experiment that extracts and renders every road within a city's boundaries into a minimalist, printable vector artwork based on OpenStreetMap data.",
+    "tags": ["maps", "data-visualization", "urban-design", "cartography"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://wallpapers-clan.com/",
+    "domain": "wallpapers-clan.com",
+    "category": "media",
+    "title": "Wallpapers Clan | Personalization Hub",
+    "description": "Creative repository offering stylized icons, desktop wallpapers, and mobile themes centered around pop culture, anime, and minimalist aesthetic designs.",
+    "tags": ["icons", "themes", "wallpapers", "customization"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://temp-mail.org/",
+    "domain": "temp-mail.org",
+    "category": "utilities",
+    "title": "Temp Mail | Disposable Email",
+    "description": "Privacy-focused communication resource that generates temporary, self-destructing email addresses to protect users from spam, advertising, and data tracking during sign-ups.",
+    "tags": ["privacy", "email", "security", "spam-protection"],
+    "pricing": "freemium",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.symbaloo.com/",
+    "domain": "symbaloo.com",
+    "category": "productivity",
+    "title": "Symbaloo | Bookmark Manager",
+    "description": "Cloud-based organizational environment that arranges web links and resources into a tile-based visual grid for centralized access and easy navigation.",
+    "tags": ["bookmarks", "organization", "web-links", "dashboard"],
+    "pricing": "freemium",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://vocaroo.com/",
+    "domain": "vocaroo.com",
+    "category": "communication",
+    "title": "Vocaroo | Audio Recorder",
+    "description": "Minimalist voice messaging utility that records audio directly through the browser and provides shareable links or downloadable files without permanent storage requirements.",
+    "tags": [
+      "voice-recording",
+      "audio-sharing",
+      "communication",
+      "quick-notes"
+    ],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://ssstik.io/",
+    "domain": "ssstik.io",
+    "category": "media",
+    "title": "SSSTik | Media Downloader",
+    "description": "Specialized retrieval utility designed to extract and save TikTok videos without watermarks in high-definition formats through a direct URL input interface.",
+    "tags": [
+      "tiktok",
+      "video-download",
+      "media-extraction",
+      "watermark-remover"
+    ],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://ssstwitter.com/",
+    "domain": "ssstwitter.com",
+    "category": "media",
+    "title": "SSSTwitter | Video Extractor",
+    "description": "Dedicated conversion utility focused on downloading video content and GIFs from Twitter (X) posts by processing status links into various quality-based file formats.",
+    "tags": ["twitter", "video-download", "social-media", "media"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.virustotal.com/gui/",
+    "domain": "virustotal.com",
+    "category": "security",
+    "title": "VirusTotal | Threat Scanner",
+    "description": "Global security database that aggregates results from dozens of antivirus engines and URL scanners to detect malware, phishing, and other cyber threats in files and domains.",
+    "tags": [
+      "malware-detection",
+      "cybersecurity",
+      "antivirus",
+      "file-analysis"
+    ],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.speedtest.net/",
+    "domain": "speedtest.net",
+    "category": "utilities",
+    "title": "Speedtest | Network Diagnostic",
+    "description": "Industry-standard measurement utility that evaluates internet connection parameters including download rate, upload speed, latency, and jitter across a global server network.",
+    "tags": ["internet-speed", "connectivity", "network", "diagnostics"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.tellows.co/",
+    "domain": "tellows.co",
+    "category": "security",
+    "title": "Tellows | Caller Identifier",
+    "description": "Crowdsourced database for identifying unknown phone numbers, providing risk ratings and user comments to protect against spam, telemarketing, and fraudulent calls.",
+    "tags": ["spam-protection", "caller-id", "security", "telephony"],
+    "pricing": "freemium",
+    "auth": "no login"
+  },
+  {
+    "url": "https://archive.org/",
+    "domain": "archive.org",
+    "category": "media",
+    "title": "Internet Archive | Digital Library",
+    "description": "Non-profit repository containing millions of free books, movies, software, music, and websites, serving as a permanent record of digital human history and cultural heritage.",
+    "tags": ["archive", "books", "history", "open-access"],
+    "pricing": "free",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://distrosea.com/",
+    "domain": "distrosea.com",
+    "category": "development",
+    "title": "DistroSea | OS Emulator",
+    "description": "Browser-based virtualization environment allowing users to test and explore various Linux distributions in a live session without any local installation or configuration.",
+    "tags": ["linux", "virtualization", "operating-systems", "testing"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://distrochooser.de/",
+    "domain": "distrochooser.de",
+    "category": "utilities",
+    "title": "Distrochooser | Recommendation Engine",
+    "description": "Decision-making resource that analyzes user preferences and technical requirements through a questionnaire to suggest the most suitable Linux distribution for their needs.",
+    "tags": ["linux", "operating-systems", "hardware", "recommendations"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://discoverprofile.com/",
+    "domain": "discoverprofile.com",
+    "category": "media",
+    "title": "DiscoverProfile | Account Viewer",
+    "description": "Anonymized social media analysis utility that allows users to view public Instagram profiles, stories, and posts without requiring a personal account or logging in.",
+    "tags": ["social-media", "privacy", "instagram", "viewer"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.oldmapsonline.org/",
+    "domain": "oldmapsonline.org",
+    "category": "education",
+    "title": "Old Maps Online | Historical Cartography",
+    "description": "Geographical search engine providing access to thousands of high-resolution historical maps from libraries and archives across the globe, indexed by location and time.",
+    "tags": ["history", "maps", "geography", "cartography"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://sweezy-cursors.com/",
+    "domain": "sweezy-cursors.com",
+    "category": "design",
+    "title": "Sweezy Cursors | Custom Graphics",
+    "description": "Personalization catalog featuring a diverse array of creative and animated mouse cursors designed to replace default pointers in web browsers and operating systems.",
+    "tags": ["customization", "graphics", "cursors", "personalization"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://objectiveunclear.com/airloom.html",
+    "domain": "objectiveunclear.com",
+    "category": "entertainment",
+    "title": "Airloom | Audiovisual Experiment",
+    "description": "Atmospheric digital environment combining generative soundscapes with abstract visual geometry to create an immersive, meditative sensory experience for the user.",
+    "tags": ["generative-art", "ambient-sound", "meditation", "interactive"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://stars.chromeexperiments.com/",
+    "domain": "chromeexperiments.com",
+    "category": "education",
+    "title": "100,000 Stars | Stellar Map",
+    "description": "Interactive 3D astronomical visualization that uses real stellar data to map the immediate neighborhood of the Sun and the broader Milky Way galaxy in the browser.",
+    "tags": ["astronomy", "space", "visualization", "science"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.repaircafe.org/",
+    "domain": "repaircafe.org",
+    "category": "utilities",
+    "title": "Repair Cafe | Community Network",
+    "description": "Global sustainability initiative connecting individuals with local meeting places where expert volunteers provide guidance on fixing broken household items and electronics.",
+    "tags": ["sustainability", "repair", "community", "environment"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.ifixit.com/",
+    "domain": "ifixit.com",
+    "category": "utilities",
+    "title": "iFixit | Repair Manual",
+    "description": "Comprehensive knowledge base and marketplace dedicated to hardware repair, offering step-by-step guides, specialized tools, and replacement parts for electronics and vehicles.",
+    "tags": ["repair", "electronics", "diy", "hardware"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://annas-archive.org/",
+    "domain": "annas-archive.org",
+    "category": "media",
+    "title": "Anna’s Archive | Shadow Library",
+    "description": "Massive search engine and repository that aggregates metadata and content from multiple digital libraries to provide open access to books, papers, and academic journals.",
+    "tags": ["books", "open-access", "research", "library"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://muted.io/",
+    "domain": "muted.io",
+    "category": "education",
+    "title": "Muted.io | Music Theory",
+    "description": "Interactive collection of visual aids and calculators designed to explain musical concepts such as scales, chords, and intervals through an intuitive digital interface.",
+    "tags": ["music-theory", "education", "piano", "audio"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.motormatchup.com/",
+    "domain": "motormatchup.com",
+    "category": "utilities",
+    "title": "Motor Matchup | Vehicle Database",
+    "description": "Automotive comparison resource that provides detailed technical specifications and performance metrics to help users evaluate different car models side-by-side.",
+    "tags": ["cars", "comparison", "automotive", "data"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.systemrequirementslab.com/cyri",
+    "domain": "systemrequirementslab.com",
+    "category": "utilities",
+    "title": "Can You Run It | Hardware Analyzer",
+    "description": "Technical diagnostic resource that analyzes a computer's hardware specifications to determine if it meets the minimum and recommended requirements for specific video games.",
+    "tags": ["gaming", "hardware", "pc-specs", "diagnostics"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://rendercv.com/",
+    "domain": "rendercv.com",
+    "category": "productivity",
+    "title": "RenderCV | Resume Generator",
+    "description": "Open-source LaTeX-based typesetting environment that automates the creation of professional CVs and resumes from structured data files for high-quality PDF output.",
+    "tags": ["resume", "latex", "career", "automation"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.passportindex.org/",
+    "domain": "passportindex.org",
+    "category": "utilities",
+    "title": "Passport Index | Global Ranking",
+    "description": "Interactive data repository that ranks national passports based on their visa-free mobility score, providing real-time insights into global travel freedom and diplomatic power.",
+    "tags": ["travel", "passports", "rankings", "geopolitics"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://tv.garden/",
+    "domain": "tv.garden",
+    "category": "entertainment",
+    "title": "TV Garden | Broadcast Map",
+    "description": "Geographic interface for discovering live television broadcasts around the world, allowing users to explore regional media culture through an interactive 3D globe.",
+    "tags": ["television", "streaming", "globe", "media"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.mapchart.net/",
+    "domain": "mapchart.net",
+    "category": "design",
+    "title": "MapChart | Custom Mapmaker",
+    "description": "Versatile visualization utility that enables the creation of custom colored maps for historical, statistical, or educational purposes using various regional templates.",
+    "tags": ["maps", "data-visualization", "geography", "graphics"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.myfridgefood.com/",
+    "domain": "myfridgefood.com",
+    "category": "productivity",
+    "title": "MyFridgeFood | Recipe Finder",
+    "description": "Culinary resource that generates cooking suggestions based on the ingredients currently available in a user's pantry, aimed at reducing food waste and simplifying meal planning.",
+    "tags": ["cooking", "recipes", "food-pantry", "meal-planning"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.manualslib.com/",
+    "domain": "manualslib.com",
+    "category": "utilities",
+    "title": "ManualsLib | User Guide Library",
+    "description": "Gigantic digital collection of technical manuals, owner's guides, and installation instructions for consumer electronics, home appliances, and industrial equipment.",
+    "tags": ["manuals", "guides", "documentation", "repair"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://phet.colorado.edu/",
+    "domain": "colorado.edu",
+    "category": "education",
+    "title": "PhET | Science Simulations",
+    "description": "Academic resource providing interactive, research-based simulations for physics, chemistry, biology, and math to help students visualize and explore complex scientific phenomena.",
+    "tags": ["science", "physics", "simulations", "stem"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.lingohut.com/",
+    "domain": "lingohut.com",
+    "category": "education",
+    "title": "LingoHut | Language Resource",
+    "description": "Linguistic learning environment offering free lessons and vocabulary exercises across dozens of global languages, designed for travelers and beginner students.",
+    "tags": ["languages", "vocabulary", "learning", "multilingual"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://bab.la/",
+    "domain": "bab.la",
+    "category": "education",
+    "title": "bab.la | Multilingual Dictionary",
+    "description": "Contextual translation resource featuring comprehensive dictionaries, conjugation tables, and linguistic examples for a wide variety of European and Asian languages.",
+    "tags": ["translation", "dictionary", "languages", "grammar"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://darebee.com/",
+    "domain": "darebee.com",
+    "category": "education",
+    "title": "DAREBEE | Fitness Manual",
+    "description": "Independent global resource providing structured workout plans, nutrition guides, and exercise visual aids in an ad-free, accessible, and community-supported environment.",
+    "tags": ["fitness", "workouts", "health", "exercise"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "http://photoskop.com/",
+    "domain": "photoskop.com",
+    "category": "education",
+    "title": "Photoskop | Photography Simulator",
+    "description": "Technical interactive guide designed to demonstrate the relationship between aperture, shutter speed, and ISO through real-time camera setting simulations and visual feedback.",
+    "tags": ["photography", "camera-settings", "simulation", "learning"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://toytheater.com/",
+    "domain": "toytheater.com",
+    "category": "education",
+    "title": "Toy Theater | Educational Games",
+    "description": "Classroom-focused collection of interactive learning games and virtual manipulatives covering elementary math, literacy, art, and logical thinking for young students.",
+    "tags": ["education", "math-games", "elementary", "visual-learning"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://poki.com/",
+    "domain": "poki.com",
+    "category": "entertainment",
+    "title": "Poki | Game Portal",
+    "description": "Extensive catalog of instant-play web games across multiple genres, optimized for cross-platform access without the need for downloads or external installations.",
+    "tags": ["gaming", "browser-games", "arcade", "online-play"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://radio.garden/",
+    "domain": "radio.garden",
+    "category": "entertainment",
+    "title": "Radio Garden | Audio Globe",
+    "description": "Interactive digital map that allows users to explore live radio stations globally by rotating a 3D Earth and tuning into local broadcasts from thousands of cities.",
+    "tags": ["radio", "music", "globe", "broadcast"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://slowroads.io/",
+    "domain": "slowroads.io",
+    "category": "entertainment",
+    "title": "Slow Roads | Driving Simulator",
+    "description": "Procedurally generated infinite driving environment focused on scenery and relaxation, offering customizable weather and terrain for a meditative motorized experience.",
+    "tags": ["simulator", "driving", "meditative", "generative-landscape"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://hackertyper.net/",
+    "domain": "hackertyper.net",
+    "category": "entertainment",
+    "title": "Hacker Typer | Prank Script",
+    "description": "Novelty simulator that converts random keystrokes into authentic-looking computer code at high speed to mimic the cinematic portrayal of expert software hacking.",
+    "tags": ["prank", "simulation", "coding-aesthetic", "novelty"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://emupedia.net/beta/emuos/",
+    "domain": "emupedia.net",
+    "category": "entertainment",
+    "title": "EmuOS | Retro Archive",
+    "description": "Meta-resource that preserves classic software and video games by emulating vintage operating systems and user interfaces within a modern web browser environment.",
+    "tags": [
+      "retro-gaming",
+      "emulation",
+      "operating-systems",
+      "software-preservation"
+    ],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.window-swap.com/",
+    "domain": "window-swap.com",
+    "category": "entertainment",
+    "title": "WindowSwap | Video Gallery",
+    "description": "Quarantine-born project sharing views from people's windows worldwide, offering high-definition video loops that provide a glimpse into different global environments.",
+    "tags": ["travel", "ambient-video", "global-community", "perspective"],
+    "pricing": "freemium",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://www.jigidi.com/",
+    "domain": "jigidi.com",
+    "category": "entertainment",
+    "title": "Jigidi | Jigsaw Puzzles",
+    "description": "Social gaming environment dedicated to creating and solving digital jigsaw puzzles from a vast library of user-uploaded images and artistic photographs.",
+    "tags": ["puzzles", "gaming", "community", "jigsaw"],
+    "pricing": "free",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://www.lacartoons.com/",
+    "domain": "lacartoons.com",
+    "category": "entertainment",
+    "title": "LA Cartoons | Animation Streamer",
+    "description": "Multimedia collection providing access to classic and contemporary animated series and movies, primarily targeting viewers in the Latin American region.",
+    "tags": ["cartoons", "animation", "streaming", "media"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.southpark.lat/",
+    "domain": "southpark.lat",
+    "category": "entertainment",
+    "title": "South Park | Episode Library",
+    "description": "Official regional repository containing the complete collection of South Park episodes available for streaming in Spanish and original English for Latin American audiences.",
+    "tags": ["animation", "streaming", "south-park", "comedy"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://stevenuniverse.best/",
+    "domain": "stevenuniverse.best",
+    "category": "entertainment",
+    "title": "Steven Universe | Media Archive",
+    "description": "Fan-hosted digital library providing streaming access to all seasons and special content related to the animated television series Steven Universe.",
+    "tags": ["animation", "streaming", "steven-universe", "fandom"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://hordes.io/",
+    "domain": "hordes.io",
+    "category": "entertainment",
+    "title": "Hordes.io | Browser MMORPG",
+    "description": "Massively multiplayer online role-playing game featuring a 3D block-style aesthetic and real-time team-based combat occurring entirely within a web browser.",
+    "tags": ["mmorpg", "gaming", "multiplayer", "browser-game"],
+    "pricing": "freemium",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://builditapp.com/",
+    "domain": "builditapp.com",
+    "category": "entertainment",
+    "title": "Build It | Sandbox Environment",
+    "description": "Creative digital space focused on construction and design, allowing users to build structures and interact within a shared virtual landscape using voxel-based tools.",
+    "tags": ["sandbox", "building", "voxel", "gaming"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://krunker.io/",
+    "domain": "krunker.io",
+    "category": "entertainment",
+    "title": "Krunker | Action Shooter",
+    "description": "Fast-paced first-person shooter featuring low-poly graphics and a robust movement system, supporting custom maps and competitive game modes directly in the browser.",
+    "tags": ["fps", "gaming", "shooter", "multiplayer"],
+    "pricing": "freemium",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://minecraftle.zachmanson.com/",
+    "domain": "zachmanson.com",
+    "category": "entertainment",
+    "title": "Minecraftle | Puzzle Variant",
+    "description": "Themed word and recipe guessing game that combines Wordle's mechanics with the crafting recipes and item library found in the Minecraft universe.",
+    "tags": ["puzzle", "minecraft", "wordle-variant", "gaming"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://youdj.online/",
+    "domain": "youdj.online",
+    "category": "media",
+    "title": "YouDJ | Virtual Mixer",
+    "description": "Browser-based audio workstation that integrates with YouTube and SoundCloud, allowing users to mix tracks and perform live DJ sets with professional-grade effects.",
+    "tags": ["dj-mixing", "audio", "music", "streaming"],
+    "pricing": "freemium",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.haxball.com/play",
+    "domain": "haxball.com",
+    "category": "entertainment",
+    "title": "HaxBall | Physics Soccer",
+    "description": "Real-time multiplayer sports simulator that simplifies soccer into a 2D physics-based environment where teamwork and spatial precision are key to scoring goals.",
+    "tags": ["multiplayer", "sports", "physics", "gaming"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.tasteatlas.com/",
+    "domain": "tasteatlas.com",
+    "category": "media",
+    "title": "TasteAtlas | Culinary Map",
+    "description": "Geographical food encyclopedia mapping traditional dishes, local ingredients, and authentic restaurants across the world based on professional and user reviews.",
+    "tags": ["food", "travel", "culture", "gastronomy"],
+    "pricing": "free",
+    "auth": "no login"
+  }
+]
