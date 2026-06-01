@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" x-data="app()" x-init="init()" :data-bs-theme="theme">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vaulti</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./assets/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"></script>
+  <style>
+    :root { --transition-duration: 0.2s; }
+    body { transition: background-color var(--transition-duration), color var(--transition-duration); }
+    .card { transition: transform var(--transition-duration), box-shadow var(--transition-duration); }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15); }
+    .category-pill { cursor: pointer; user-select: none; }
+    .tag-badge { font-size: 0.7rem; }
+    .search-input:focus { box-shadow: none; border-color: var(--bs-primary); }
+    .fade-enter { animation: fadeIn 0.3s ease-in; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .card-img-top { height: 140px; object-fit: cover; }
+    .card-body { display: flex; flex-direction: column; }
+    .card-text { flex-grow: 1; }
+    [x-cloak] { display: none !important; }
+  </style>
+</head>
+<body class="bg-body-tertiary min-vh-100 d-flex flex-column">
+
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-expand-sm bg-body border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-body" href="#">
+        <i class="bi bi-collection-fill me-2 text-primary"></i>Vaulti
+      </a>
+      <div class="d-flex gap-2 align-items-center ms-auto">
+        <div class="position-relative" x-cloak>
+          <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-body-secondary small"></i>
+          <input type="search" class="form-control form-control-sm ps-5 search-input" placeholder="Search..." x-model="search" style="width:200px">
+        </div>
+        <button class="btn btn-sm btn-outline-dark border-0" @click="theme = theme === 'light' ? 'dark' : 'light'" title="Toggle theme">
+          <i :class="theme === 'light' ? 'bi-moon-stars-fill' : 'bi-sun-fill'"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="container py-4 flex-grow-1" x-cloak>
+
+    <!-- Loading -->
+    <div x-show="!loaded" class="text-center py-5">
+      <div class="spinner-border text-primary mb-3" role="status"></div>
+      <p class="text-body-secondary">Loading resources...</p>
+    </div>
+
+    <template x-if="loaded">
+      <div>
+
+        <!-- Counter and clear filters -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
+          <small class="text-body-secondary">
+            Showing <strong x-text="filteredResources.length"></strong> of <strong x-text="resources.length"></strong> resources
+          </small>
+          <button class="btn btn-sm btn-outline-dark" @click="search=''; selectedCategory='all'; selectedPricing='all'" x-show="search || selectedCategory!=='all' || selectedPricing!=='all'">
+            <i class="bi bi-x-circle me-1"></i>Clear filters
+          </button>
+        </div>
+
+        <!-- Pricing filter -->
+        <div class="btn-group btn-group-sm mb-3" role="group">
+          <template x-for="p in pricingOptions" :key="p">
+            <button class="btn" :class="selectedPricing === p ? 'btn-primary' : 'btn-outline-dark'" @click="selectedPricing = p" x-text="p === 'all' ? 'All' : p.charAt(0).toUpperCase() + p.slice(1)"></button>
+          </template>
+        </div>
+
+        <!-- Category filter -->
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <template x-for="cat in categoryOptions" :key="cat">
+            <span class="badge category-pill rounded-pill px-3 py-2" :class="selectedCategory === cat ? 'bg-primary' : 'bg-body-tertiary text-body-secondary'" @click="selectedCategory = cat" x-text="cat === 'all' ? 'All' : cat.charAt(0).toUpperCase() + cat.slice(1)"></span>
+          </template>
+        </div>
+
+        <!-- Card grid -->
+        <div class="row g-3">
+          <template x-for="(r, i) in filteredResources" :key="r.url">
+            <div class="col-sm-6 col-md-4 col-lg-3 fade-enter" :style="`animation-delay:${(i%8)*0.05}s`">
+              <div class="card h-100 border shadow-sm" @click="openDetail(r)" style="cursor:pointer">
+                <div class="card-img-top bg-body-tertiary d-flex align-items-center justify-content-center overflow-hidden" style="height:120px" x-data="{ faviconError: false }">
+                  <img :src="`https://www.google.com/s2/favicons?domain=${r.domain}&sz=64`" alt="" class="img-fluid" style="max-height:64px" loading="lazy" @error="faviconError = true" x-show="!faviconError">
+                  <i x-show="faviconError" class="bi bi-globe2 text-body-secondary" style="font-size:2.5rem"></i>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-1">
+                    <h6 class="card-title mb-0 text-truncate" x-text="r.title"></h6>
+                    <span class="badge ms-1 flex-shrink-0" :class="r.pricing === 'free' ? 'bg-success' : 'bg-warning text-dark'" style="font-size:0.65rem" x-text="r.pricing"></span>
+                  </div>
+                  <p class="card-text small text-body-secondary mb-2" x-text="r.description.length > 100 ? r.description.slice(0,100)+'...' : r.description"></p>
+                  <div class="d-flex flex-wrap gap-1 mt-auto">
+                    <span class="badge bg-primary bg-opacity-10 text-primary tag-badge" x-text="r.category"></span>
+                    <template x-for="tag in r.tags.slice(0,3)" :key="tag">
+                      <span class="badge bg-body-tertiary text-body-secondary tag-badge" x-text="tag"></span>
+                    </template>
+                    <small x-show="r.tags.length > 3" class="text-body-secondary tag-badge">+<span x-text="r.tags.length-3"></span></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+
+        <!-- No results -->
+        <div x-show="filteredResources.length === 0" class="text-center py-5">
+          <i class="bi bi-search text-body-secondary" style="font-size:3rem"></i>
+          <p class="text-body-secondary mt-2">No resources found matching those filters.</p>
+        </div>
+
+      </div>
+    </template>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-top py-3 bg-body text-center text-body-secondary small">
+    <div class="container">
+      <i class="bi bi-collection me-1"></i>Vaulti &mdash; <span x-text="resources.length"></span> curated resources
+    </div>
+  </footer>
+
+  <!-- Detail modal -->
+  <div class="modal fade" id="detailModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" x-data="{ r: null }">
+        <template x-if="r">
+          <div>
+            <div class="modal-header">
+              <h5 class="modal-title" x-text="r.title"></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p class="mb-1"><strong>Description</strong></p>
+              <p class="text-body-secondary" x-text="r.description"></p>
+              <div class="row g-2 mb-3">
+                <div class="col-6">
+                  <small class="text-body-secondary">Category</small>
+                  <div><span class="badge bg-primary bg-opacity-10 text-primary" x-text="r.category"></span></div>
+                </div>
+                <div class="col-6">
+                  <small class="text-body-secondary">Pricing</small>
+                  <div><span class="badge" :class="r.pricing === 'free' ? 'bg-success' : 'bg-warning text-dark'" x-text="r.pricing"></span></div>
+                </div>
+              </div>
+              <template x-if="r.tags.length">
+                <div class="mb-3">
+                  <small class="text-body-secondary">Tags</small>
+                  <div class="d-flex flex-wrap gap-1 mt-1">
+                    <template x-for="tag in r.tags" :key="tag">
+                      <span class="badge bg-body-tertiary text-body-secondary tag-badge" x-text="tag"></span>
+                    </template>
+                  </div>
+                </div>
+              </template>
+              <p class="mb-0 text-truncate">
+                <i class="bi bi-link-45deg me-1"></i>
+                <a :href="r.url" target="_blank" rel="noopener" class="text-break" x-text="r.url"></a>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a :href="r.url" target="_blank" rel="noopener" class="btn btn-primary">
+                <i class="bi bi-box-arrow-up-right me-1"></i>Open site
+              </a>
+              <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function app() {
+      return {
+        resources: [],
+        loaded: false,
+        search: '',
+        selectedCategory: 'all',
+        selectedPricing: 'all',
+        theme: 'light',
+        modal: null,
+
+        get categories() {
+          return [...new Set(this.resources.map(r => r.category))];
+        },
+
+        get categoryOptions() {
+          return ['all', ...this.categories];
+        },
+
+        get pricingOptions() {
+          return ['all', ...new Set(this.resources.map(r => r.pricing))];
+        },
+
+        get filteredResources() {
+          return this.resources.filter(r => {
+            const q = this.search.toLowerCase().trim();
+            if (q && !r.title.toLowerCase().includes(q) && !r.description.toLowerCase().includes(q) && !r.tags.some(t => t.toLowerCase().includes(q))) {
+              return false;
+            }
+            if (this.selectedCategory !== 'all' && r.category !== this.selectedCategory) return false;
+            if (this.selectedPricing !== 'all' && r.pricing !== this.selectedPricing) return false;
+            return true;
+          });
+        },
+
+        init() {
+          const saved = localStorage.getItem('ar-theme');
+          if (saved) this.theme = saved;
+          this.$watch('theme', val => localStorage.setItem('ar-theme', val));
+
+          fetch('https://raw.githubusercontent.com/itsmmunoz/vaulti/refs/heads/main/data/resources.json')
+            .then(res => res.json())
+            .then(data => {
+              this.resources = data;
+              this.loaded = true;
+            })
+            .catch(err => {
+              console.error('Error loading resources:', err);
+              this.loaded = true;
+            });
+        },
+
+        openDetail(r) {
+          const el = document.getElementById('detailModal');
+          const alpineEl = el.querySelector('[x-data]');
+          const scope = Alpine.$data(alpineEl);
+          scope.r = r;
+          if (!this.modal) this.modal = new bootstrap.Modal(el);
+          this.modal.show();
+        }
+      };
+    }
+
+  </script>
+</body>
+</html>
