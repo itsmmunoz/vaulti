@@ -778,5 +778,383 @@
     "tags": ["food", "travel", "culture", "gastronomy"],
     "pricing": "free",
     "auth": "no login"
+  },
+  {
+    "url": "https://insta-stories-viewer.com/",
+    "domain": "insta-stories-viewer.com",
+    "category": "media",
+    "title": "Insta Stories Viewer | Instagram Content Viewer",
+    "description": "Privacy-focused viewer for social media stories and profiles, enabling users to browse content without direct engagement or account identification while maintaining anonymity during research.",
+    "tags": ["instagram", "stories", "viewer", "privacy", "social-media"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://2v2.io/",
+    "domain": "2v2.io",
+    "category": "entertainment",
+    "title": "2v2 | Competitive Gaming Matchmaker",
+    "description": "Centralized system for organizing and participating in multiplayer gaming tournaments, providing automated brackets and player matchmaking for various popular competitive video games.",
+    "tags": ["esports", "gaming", "matchmaking", "tournaments", "multiplayer"],
+    "pricing": "free",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://messenger.abeto.co/",
+    "domain": "abeto.co",
+    "category": "entertainment",
+    "title": "Messenger | Browser Game",
+    "description": "2025 browser game about a young mail carrier delivering parcels around a small planet, featuring multiplayer emoji communication.",
+    "tags": ["game", "multiplayer", "3d", "delivery", "indie"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://flashmuseum.org/",
+    "domain": "flashmuseum.org",
+    "category": "media",
+    "title": "Flash Museum | Digital Multimedia Archive",
+    "description": "Preservation project dedicated to hosting and displaying legacy Adobe Flash animations and games, maintaining cultural digital artifacts from the early internet era for modern browsing.",
+    "tags": ["flash", "preservation", "archive", "animation", "history"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.opensourcealternative.to/",
+    "domain": "opensourcealternative.to",
+    "category": "development",
+    "title": "Open Source Alternative | Software Directory",
+    "description": "Comprehensive catalog comparing proprietary software products with open-source equivalents, assisting developers and businesses in finding transparent and cost-effective software solutions.",
+    "tags": ["open-source", "directory", "alternatives", "saas", "software"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.ilovepdf.com/",
+    "domain": "ilovepdf.com",
+    "category": "productivity",
+    "title": "ILovePDF | Document Management Suite",
+    "description": "Collection of specialized utilities for modifying, converting, and compressing PDF files, designed to facilitate complex document workflows through a simplified web-based interface.",
+    "tags": ["pdf", "editor", "converter", "documents", "optimization"],
+    "pricing": "freemium",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://www.autodraw.com/",
+    "domain": "autodraw.com",
+    "category": "ai",
+    "title": "AutoDraw | Artificial Intelligence Illustrator",
+    "description": "Creative drawing environment that transforms rough sketches into professional icons using machine learning, bridging the gap between amateur illustration and high-quality graphic design.",
+    "tags": [
+      "drawing",
+      "machine-learning",
+      "sketch",
+      "illustration",
+      "creative"
+    ],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://radiocast.co/",
+    "domain": "radiocast.co",
+    "category": "media",
+    "title": "Radiocast | International Radio Directory",
+    "description": "Global index providing live streaming access to thousands of broadcast stations worldwide, categorized by genre and geographic location for seamless audio discovery and exploration.",
+    "tags": ["radio", "streaming", "music", "broadcast", "audio"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://openguessr.com/",
+    "domain": "openguessr.com",
+    "category": "entertainment",
+    "title": "OpenGuessr | Geographic Discovery Game",
+    "description": "Interactive trivia challenge involving the identification of global locations based on panoramic imagery, utilizing open-source mapping data to provide a competitive exploration experience.",
+    "tags": ["geography", "trivia", "map", "exploration", "gaming"],
+    "pricing": "free",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://creativepark.canon/",
+    "domain": "canon",
+    "category": "design",
+    "title": "Creative Park | Paper Craft Repository",
+    "description": "Vast collection of printable templates for paper models, greeting cards, and scrapbooking projects, maintained for hobbyists seeking structured physical craft designs and materials.",
+    "tags": ["papercraft", "templates", "printing", "hobbies", "origami"],
+    "pricing": "free",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://paperme.pixzens.com/",
+    "domain": "pixzens.com",
+    "category": "design",
+    "title": "PaperMe | Custom Toy Generator",
+    "description": "Specialized creation system for designing personalized three-dimensional paper characters and figurines, allowing for individual customization of patterns before printing and assembly.",
+    "tags": ["paper-toys", "customization", "crafts", "modeling", "diy"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.dimensions.com/",
+    "domain": "dimensions.com",
+    "category": "design",
+    "title": "Dimensions | Architectural Data Resource",
+    "description": "Scaled database of common objects and spaces designed for architects and designers, offering precise measurements and illustrations to aid in spatial planning and environmental design.",
+    "tags": [
+      "architecture",
+      "scaling",
+      "measurements",
+      "reference",
+      "blueprints"
+    ],
+    "pricing": "freemium",
+    "auth": "no login"
+  },
+  {
+    "url": "https://tastedive.com/",
+    "domain": "tastedive.com",
+    "category": "entertainment",
+    "title": "TasteDive | Cultural Recommendation Engine",
+    "description": "Algorithmic discovery system for finding new movies, books, and music based on user preferences, using similarity mapping to suggest related media across different creative formats.",
+    "tags": [
+      "recommendations",
+      "movies",
+      "music",
+      "discovery",
+      "entertainment"
+    ],
+    "pricing": "free",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://funes.world/",
+    "domain": "funes.world",
+    "category": "productivity",
+    "title": "Funes | Digital Memory Archive",
+    "description": "Personal repository for documenting life events and preserving digital legacies, serving as a structured space for long-term memory storage and individual historical documentation.",
+    "tags": ["memory", "archive", "journaling", "preservation", "personal"],
+    "pricing": "freemium",
+    "auth": "required login"
+  },
+  {
+    "url": "https://www.classcentral.com/",
+    "domain": "classcentral.com",
+    "category": "education",
+    "title": "Class Central | Academic Course Aggregator",
+    "description": "Search engine and reviews hub for online education courses from various university providers, facilitating the discovery of massive open online courses across all academic disciplines.",
+    "tags": ["mooc", "courses", "online-learning", "university", "career"],
+    "pricing": "free",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://gallerix.org/",
+    "domain": "gallerix.org",
+    "category": "education",
+    "title": "Gallerix | Virtual Fine Art Museum",
+    "description": "Extensive digital library featuring high-resolution images of historical paintings and fine art collections, providing educational access to global artistic heritage from various eras.",
+    "tags": ["art", "museum", "painting", "gallery", "history"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.infinityfree.com/",
+    "domain": "infinityfree.com",
+    "category": "development",
+    "title": "InfinityFree | Shared Web Host",
+    "description": "Provider of no-cost hosting services including PHP and MySQL support, catering to developers and hobbyists looking to deploy personal projects without financial overhead or ads.",
+    "tags": ["hosting", "server", "web-development", "php", "mysql"],
+    "pricing": "free",
+    "auth": "required login"
+  },
+  {
+    "url": "https://www.tinkercad.com/",
+    "domain": "tinkercad.com",
+    "category": "design",
+    "title": "Tinkercad | Computer-Aided Design Suite",
+    "description": "Entry-level software for three-dimensional modeling, electronic circuit design, and block-based coding, widely used in educational settings to introduce fundamental engineering concepts.",
+    "tags": ["3d-printing", "cad", "electronics", "education", "modeling"],
+    "pricing": "free",
+    "auth": "required login"
+  },
+  {
+    "url": "https://www.buildcores.com/",
+    "domain": "buildcores.com",
+    "category": "utilities",
+    "title": "BuildCores | PC Hardware Planner",
+    "description": "Compatibility checker and price tracker for assembling custom desktop computer systems, providing detailed specifications and performance metrics for various hardware components.",
+    "tags": [
+      "pc-building",
+      "hardware",
+      "compatibility",
+      "computer",
+      "optimization"
+    ],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://seostudio.tools/",
+    "domain": "seostudio.tools",
+    "category": "productivity",
+    "title": "SEO Studio | Search Optimization Toolkit",
+    "description": "Diverse set of utilities for analyzing website performance and improving search engine rankings, offering granular data on keywords, meta tags, and overall web visibility metrics.",
+    "tags": ["seo", "keywords", "analytics", "marketing", "webmaster"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://123apps.com/",
+    "domain": "123apps.com",
+    "category": "utilities",
+    "title": "123Apps | Media Processing Collection",
+    "description": "Suite of web-based applications for editing video, audio, and PDF files, offering diverse file conversion and manipulation capabilities without the need for software installation.",
+    "tags": [
+      "video-editing",
+      "audio-editing",
+      "converter",
+      "multimedia",
+      "pdf"
+    ],
+    "pricing": "freemium",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://x-minus.pro/ai",
+    "domain": "x-minus.pro",
+    "category": "ai",
+    "title": "X-Minus | Audio Separation Engine",
+    "description": "Neural network application for isolating vocals and instruments from existing musical recordings, facilitating the creation of high-quality backing tracks and karaoke versions of songs.",
+    "tags": ["vocal-remover", "karaoke", "stem-separation", "audio", "music"],
+    "pricing": "freemium",
+    "auth": "optional login"
+  },
+  {
+    "url": "https://www.elejandria.com/",
+    "domain": "elejandria.com",
+    "category": "education",
+    "title": "Elejandria | Public Domain Library",
+    "description": "Digital repository offering free access to classic literature and books with expired copyrights, supporting literacy and academic research through downloadable ebook formats.",
+    "tags": ["ebooks", "literature", "reading", "classics", "library"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://drawastickman.com/",
+    "domain": "drawastickman.com",
+    "category": "entertainment",
+    "title": "Draw A Stickman | Interactive Narrative Adventure",
+    "description": "Creative storytelling experience where user-drawn characters interact with a dynamic digital environment, blending player illustration with automated narrative progression and puzzles.",
+    "tags": ["drawing", "storytelling", "adventure", "creative", "animation"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://goblin.tools/",
+    "domain": "goblin.tools",
+    "category": "productivity",
+    "title": "Goblin Tools | Cognitive Task Aid",
+    "description": "Collection of small single-task applications designed to assist neurodivergent individuals with executive functioning, including tools for task breakdown and social tone estimation.",
+    "tags": [
+      "neurodiversity",
+      "organization",
+      "productivity",
+      "accessibility",
+      "ai"
+    ],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://thetruesize.com/",
+    "domain": "thetruesize.com",
+    "category": "education",
+    "title": "The True Size Of | Cartographic Comparison Simulator",
+    "description": "Interactive map visualization demonstrating the relative scale of countries by correcting Mercator projection distortions, providing a more accurate perspective on global geography.",
+    "tags": ["maps", "geography", "visualization", "cartography", "data"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://papermau.blogspot.com/",
+    "domain": "blogspot.com",
+    "category": "design",
+    "title": "Papermau | Paper Model Catalog",
+    "description": "Curated collection of downloadable papercraft templates ranging from historical buildings to fictional vehicles, serving as a hub for enthusiasts of traditional physical modeling.",
+    "tags": [
+      "papercraft",
+      "modeling",
+      "hobbies",
+      "paper-models",
+      "architecture"
+    ],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://www.languageguide.org/",
+    "domain": "languageguide.org",
+    "category": "education",
+    "title": "Language Guide | Visual Linguistic Reference",
+    "description": "Pictorial vocabulary resource providing audio pronunciations for multiple languages, assisting beginners in building fundamental linguistic skills through image association.",
+    "tags": [
+      "linguistics",
+      "vocabulary",
+      "language-learning",
+      "audio",
+      "pronunciation"
+    ],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://zperiod.app/",
+    "domain": "zperiod.app",
+    "category": "productivity",
+    "title": "ZPeriod | Menstrual Cycle Tracker",
+    "description": "Privacy-focused logging application for monitoring reproductive health and predicting menstrual phases, offering users a secure way to track personal biological cycles locally.",
+    "tags": ["health", "tracking", "cycle", "wellness", "privacy"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://demo.f4map.com/",
+    "domain": "f4map.com",
+    "category": "education",
+    "title": "F4map | 3D Map Visualizer",
+    "description": "Dynamic rendering engine that presents OpenStreetMap data in a fully realized three-dimensional environment, featuring realistic lighting, shadows, and architectural details.",
+    "tags": ["maps", "3d-rendering", "geospatial", "data", "visualization"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "http://dinosaurpictures.org/ancient-earth",
+    "domain": "dinosaurpictures.org",
+    "category": "education",
+    "title": "Ancient Earth | Paleogeographic Globe Simulator",
+    "description": "Interactive visualization of the planet's tectonic evolution across millions of years, allowing users to observe continental drift and geological changes throughout history.",
+    "tags": ["geology", "earth-science", "history", "dinosaurs", "evolution"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://neal.fun/asteroid-launcher/",
+    "domain": "neal.fun",
+    "category": "education",
+    "title": "Asteroid Launcher | Impact Physics Simulator",
+    "description": "Scientific visualization for calculating the environmental effects of various asteroid strikes on Earth, modeling damage radii and seismic impacts based on physical parameters.",
+    "tags": ["physics", "space", "simulation", "astronomy", "science"],
+    "pricing": "free",
+    "auth": "no login"
+  },
+  {
+    "url": "https://refero.design/",
+    "domain": "refero.design",
+    "category": "design",
+    "title": "Refero | Interface Design Library",
+    "description": "Curated gallery of user interface patterns and design screenshots from popular web applications, serving as a professional reference for UX designers and product developers.",
+    "tags": ["ui", "ux", "inspiration", "screenshots", "patterns"],
+    "pricing": "freemium",
+    "auth": "optional login"
   }
 ]
